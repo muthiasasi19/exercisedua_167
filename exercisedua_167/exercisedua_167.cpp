@@ -36,7 +36,7 @@ int main() {
 
     // Buku beserta pengarang
     joko.buku = { "Fisika", "Algoritma" };
-    lia.buku = { "Basisdata" };
+    lia.buku = { "Basis Data" };
     giga.buku = { "Matematika", "Multimedia 1" };
     asroni.buku = { "Dasar Pemrograman" };
    
