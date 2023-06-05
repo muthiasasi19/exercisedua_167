@@ -8,8 +8,9 @@ using namespace std;
 class Pengarang {
 public:
     string namaPengarang;
-    vector<string> buku;
     vector<string> penerbit;
+    vector<string> judulBuku;
+   
 
     Pengarang(string _namaPengarang) {
         namaPengarang = _namaPengarang;
@@ -35,10 +36,10 @@ int main() {
     Pengarang asroni("Asroni");
 
     // Buku beserta pengarang
-    joko.buku = { "Fisika", "Algoritma" };
-    lia.buku = { "Basis Data" };
-    giga.buku = { "Matematika", "Multimedia 1" };
-    asroni.buku = { "Dasar Pemrograman" };
+    joko.judulBuku = { "Fisika", "Algoritma" };
+    lia.judulBuku = { "Basis Data" };
+    giga.judulBuku = { "Matematika", "Multimedia 1" };
+    asroni.judulBuku = { "Dasar Pemrograman" };
    
     
 
@@ -78,30 +79,30 @@ int main() {
 
     // Buku yang dikarang "Joko"
     cout << "Daftar buku yang dikarang \"Joko\":" << endl;
-    for (const string& buku : joko.buku) {
-        cout << buku << endl;
+    for (const string& judulBuku : joko.judulBuku) {
+        cout << judulBuku << endl;
     }
     cout << "=========================================" << endl;
 
     // Buku yang dikarang "Lia"
     cout << "Daftar buku yang dikarang \"Lia\":" << endl;
-    for (const string& buku : lia.buku) {
-        cout << buku << endl;
+    for (const string& judulBuku : lia.judulBuku) {
+        cout << judulBuku << endl;
     }
     cout << "=========================================" << endl;
 
     // Buku yang dikarang "Asroni"
     cout << "Daftar buku yang dikarang \"Asroni\":" << endl;
-    for (const string& buku : asroni.buku) {
-        cout << buku << endl;
+    for (const string& judulBuku : asroni.judulBuku) {
+        cout << judulBuku << endl;
 
         cout << "=========================================" << endl;
     }
 
     // Buku yang dikarang "Giga"
     cout << "Daftar buku yang dikarang \"Giga\":" << endl;
-    for (const string& buku : giga.buku) {
-        cout << buku << endl;
+    for (const string& judulBuku : giga.judulBuku) {
+        cout << judulBuku << endl;
     }
 
     return 0;
